@@ -1,141 +1,150 @@
-* {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 300;
-    font-style: normal;
+#presentacion {
+    height: 88vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
-#perfil {
-    width: 35px;
+#img-presentacion {
+    border-radius: 50%;
+    padding: 40px;
+}
+
+#habilidades {
+    height: 100vh;
+    display: flex;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: justify;
+}
+
+#contactame {
+    background-color: rgb(232, 209, 124);
+    border: none;
+}
+
+.bi {
+    color: rgb(232, 209, 124);
+    border: none;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.feature {
+    padding-inline: 24px; /* Ajusta el valor según tus necesidades */
+    border-radius: 0.5rem; /* Opcional: para bordes redondeados */
+}
+
+.feature-icon {
+    margin-bottom: 1rem; /* Espacio entre el ícono y el texto */
+}
+
+.proyecto {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#proyecto-1 {
+    background-image: url('imágenes/algs.jpg');
+    background-size: cover;
+}
+
+#proyecto-2 {
+    background-image: url('imágenes/horno.jpg');
+    background-size: cover;
+}
+
+#proyecto-3 {
+    background-image: url('imágenes/google.jpg');
+    background-size: cover;
+}
+
+
+.text-shadow-1 {
+    text-shadow: 1px -1px 8px rgb(158, 158, 94);
+}
+
+.text-shadow-2 {
+    text-shadow: 1px -1px 8px rgba(45, 17, 0, 0.679);
+}
+
+.text-shadow-3 {
+    text-shadow: 1px -1px 8px rgba(113, 61, 26, 0.395);
+}
+
+.proyecto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(232, 225, 195, 0.5); /* Color amarillo con 50% de opacidad */
+    z-index: 1; /* Asegura que el pseudo-elemento esté sobre la imagen */
+}
+
+.proyecto .d-flex {
+    position: relative; /* Para asegurarse de que el contenido se muestre por encima del pseudo-elemento */
+    z-index: 2; /* Asegura que el contenido se muestre por encima de la capa de color */
+}
+
+#imagen-redonda {
     border-radius: 50%;
 }
 
-figure {
-    width: 20px;
-    margin: 0px;
-    padding: 10px;
+.text-container {
+    max-width: 300px; /* Ajusta este valor al ancho de tus imágenes */
+    margin: 0 auto; /* Centra el contenedor en su elemento padre */
+    text-align: justify; /* Justifica el texto dentro del contenedor */
 }
 
-#cuadro {
-    width: 20px;
+.text-container p {
+    margin: 0;
+    padding: 0;
 }
 
-footer div {
+.text-container h3 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.d-flex {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
-ul li {
-    display: inline-block;
-    padding: 15px;
+.align-items-center {
+    align-items: center; /* Centra verticalmente el contenido dentro del contenedor flex */
 }
 
-ul {
-    padding: 0px;
-    margin: 0px;
+.justify-content-center {
+    justify-content: center; /* Centra horizontalmente el contenido dentro del contenedor flex */
 }
 
-footer p {
-    padding: 15px;
-    margin: 0px;
-    border-bottom: 1px solid #dadce0;
+.text-container {
+    max-width: 600px; /* Ajusta el ancho del contenedor del texto según sea necesario */
+    text-align: justify; /* Justifica el texto dentro del contenedor */
 }
 
-nav {
-    display: flex;
-    justify-content: end;
+.text-container p {
+    margin: 0;
+    padding: 0;
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    height: 74.8vh;
+.text-container h3 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
 }
 
-#logo {
-    padding-top: 10vh;
-    height: 92px;
+.me-4 {
+    margin-right: 1.5rem; /* Ajusta el margen derecho de la imagen para separar la imagen del texto */
 }
 
-#buscador {
-    display: flex;
-    justify-content: center;
-    border: 1px solid #dadce0;
-    align-items: stretch;
-    height: 40px;
-    margin: 25px 0px 20px 0px;
-    width: 572px;
-    border-radius: 24px;
-    
+
+.social-nav .nav-link i {
+    color: #3e3d3ace; /* Or use any color that matches your design */
 }
 
-#buscador:hover {
-    background: #fff;
-    box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
-    border-color: transparent;
-}
-
-#buscador input {
-    flex-grow: 1;
-    border: none;
-    outline: none;
-    
-}
-
-article {
-    text-align: center;
-}
-
-footer {
-    background-color: #f2f2f2;
-}
-
-body {
-    margin: 0px;
-}
-
-button {
-    background-color: #f8f9fa;
-    border: 1px solid #f8f9fa;
-    color: #3c4043;
-
-    padding:0 16px ;
-    margin: 11px 4px;
-    height: 36px;
-    
-    border-radius: 4px;
-    font-size: 15px;
-}
-
-button:hover {
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
-    background-color: #f8f9fa;
-    border: 1px solid #dadce0;
-    color: #202124;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-header a {
-    font-size: 13px;
-    color: #1f1f1f;
-    
-}
-
-footer a {
-    font-size: 14px;
-    color: #202124;
-}
-
-header ul {
-    display: flex;
-    align-items: center;
-    padding-right: 15px;
-    padding-top: 10px;
-}
